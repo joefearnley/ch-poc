@@ -1,0 +1,327 @@
+/**
+ *
+ * 	Main style sheet for  College housing.
+ *
+ *	date:	07/25/09
+ *	author:	joe fearnley
+ *
+ *	file: style.css
+ */
+
+* {
+	margin: 0;
+}
+
+html,body {	
+	height: 100%;
+	width: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+a {
+	font-weight: bold;
+	color: #79B30B;
+	text-decoration: none; 
+}
+
+h1 { 
+	padding: 10px;
+	color: #555;
+	font-weight: normal;
+}
+
+h2 {
+	padding: 30px 10px 0px 10px;
+	font-weight: normal;
+	color: #777;
+}
+
+p {
+	padding: 10px 20px 10px 20px;
+}
+
+#header {
+	height: 100px;
+	background: url("../images/header_back.png") repeat-x bottom left;
+	padding: 0px;
+}
+
+#header a img {
+	border: none;
+}
+
+#navlist li {
+	font-size: 13px;
+	display: inline;
+	list-style-type: none;
+	margin-right: 10px;
+	float: right;
+	margin-top: 10px;
+}
+
+#navlist li a {
+	font-weight: none;
+	padding: 3px;
+	margin: 3px;
+}
+
+.nav-current {
+	padding-bottom: 3px;
+	border-bottom: #fff solid 2px;
+}
+
+#container {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #777;
+	height: 100%;
+	width: 100%;
+}
+
+#content {
+	padding: 30px 0px 10px 0px;
+}
+
+#footer {
+/*	background: url("../images/footer_back.png") repeat-x top left;*/
+	border-top: #79B30B 10px solid;
+	background: #000;
+	text-align: center;
+	height: 30px;
+	clear:both;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index:101;
+	font-size: 12px;
+}
+
+#footer p {
+	padding: 5px;
+}
+
+.center {
+	text-align: center;
+}
+
+
+.heading { 
+	font-size: 2em;	
+}
+
+input {
+    font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	padding: 3px;
+}
+
+label {
+	font-weight: bold;
+}
+
+select {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	padding: 3px;
+	width: 328px;
+}
+
+#mapcontainer {
+	height: 100%;
+	width: 100%;
+}
+
+#houselist {
+	width: 200px;
+	height: 100%;
+	background: #fff;
+	position: absolute; 
+	top: 50; 
+	left: 5;
+	z-index:100;
+	border-right: #ddd solid 5px;
+	font-size: 10px;
+}
+
+#houselist table {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.homeicon {
+	text-align: center;
+}
+
+.house-thumbnail {
+	border: #ddd solid 2px;
+}
+
+
+#map {
+	width: 100%;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	font-size: 10px;
+}
+
+.error {
+	color: red;
+}
+
+.hidden {
+	display: none;
+}
+
+/**
+ * Info Window Stuff
+ */
+.info-window {
+	font-size: 14px;	
+	width: 275px;
+	height: 110px;
+}
+
+.info-window div.house-image {
+	display: block;
+	float: left;
+	width: 140px;
+	padding: 0;
+	margin: 0;
+}
+
+.info-window div.house-info {
+	display: block;
+	float: left;
+	width: 120px;
+	padding: 0;
+	margin: 0;
+}
+	
+.house-info div.address {
+	margin: 5px 0 10px 0;
+}
+
+.house-info  div.left-col {
+	display: block;
+	float: left;
+	width: 90px;
+	padding: 0;
+	margin: 0;
+}
+
+.house-info div.right-col {
+	display: block;
+	float: left;
+	width: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+#house-modal-container h2 {
+	border-bottom: #aaa solid 1px;
+	margin-bottom: 5px;
+}
+
+#house-modal-image {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 5px 0 0 0;
+}
+
+#house-modal-image img {
+	border: #aaa solid 3px;
+}
+
+#house-modal-data {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 10px 0 0 10px;
+	font-size: 18px;
+}
+
+#house-modal-data .left {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+
+#house-modal-data .right {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+
+#single-column { 
+	width: 760px; 
+	text-align: left; 
+	margin: 0 auto 
+}
+
+#single-column p {  
+	text-align: left; 
+}
+
+.contact-form {
+	margin: 30px 0 0 10px;
+}
+
+.contact-form div {
+	clear: left;
+	margin: 0;
+	padding: 5px 0 8px 20px;
+	height: 1%;
+}
+
+.contact-form label {
+	font-weight: bold;
+	float: left;
+	width: 150px;
+}
+
+.contact-form input[type="text"] {
+	width: 180px;
+}
+
+.contact-form textarea {
+	width: 250px;
+	height: 150px;
+}
+
+* html .threepxfix{
+	margin-left: 3px;
+}
+
+.pagination-links {
+	border-top: #ddd solid 2px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+.pagination-links a {
+	padding: 3px;
+	border: 1px #79B30B solid;
+}
+
+.triangle-left {
+	border-color: transparent transparent #79B30B transparent;
+	border-style: solid;
+	border-width: 0px 5px 5px 5px;
+	height: 0px;
+	width: 0px;
+}
+
+.triangle-right {
+	border-color: transparent transparent transparent #79B30B;
+	border-style: solid;
+	border-width: 5px 5px 0px 5px;
+	height: 0px;
+	width: 0px;
+}
